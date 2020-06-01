@@ -5,6 +5,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PostsComponentComponent } from './posts-component/posts-component.component';
+import { PostService } from './services/post.service';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,7 @@ import { PostsComponentComponent } from './posts-component/posts-component.compo
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [PostService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
